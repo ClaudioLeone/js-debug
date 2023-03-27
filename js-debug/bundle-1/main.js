@@ -63,7 +63,7 @@ function printColorsNumber() {
 printColorsNumber();
 
 /*
-    1. Questo codice, serve a riportare una stringa in console che indichi il numero totale di elementi (di colori in questo caso) presenti nell'array di elementi dichiarato
+    1. Questo codice serve a riportare una stringa in console che indichi il numero totale di elementi (di colori in questo caso) presenti nell'array di elementi dichiarato.
 
     2. SI, è presente un errore di sintassi, ovvero la posizione delle ultime due lettere della parola 'length' è stata inserita al contrario, producendo 'lenght' come metodo per il nostro array 'colors' che non può essere riconosciuto come metodo valido poiché inesistente.
     
@@ -81,6 +81,24 @@ printColorsNumber();
 // }
 // addNumbers();
 
+// ESERCIZIO 3
+function addNumbers() {
+    const userNumber = parseInt(prompt('Inserisci un numero'));
+    const total = userNumber + 12;
+
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
+
+/*
+    1. Questo codice serve a sommare il numero inserito dall'utente via input con un numero che abbiamo scelto noi come addendo e riportarne il risultato in console.
+
+    2. NO, non sono presenti errori di sintassi.
+
+    3. SI, è presente un errore logico: la funzione svolge correttamente il suo lavoro a livello tecnico ma se, al suo interno, non convertiamo l'input dell'utente (che nativamente è di tipo 'stringa') in un numero la somma dell'input e del nostro numero darà come risultato un concatenamento di stringhe (esempio ->>> input: '0';  numero scelto da noi: '12'; RISULTATO IN CONSOLE: '012').
+*/
+
+///////////////////////////////////////////////////////////////////////////////////
 
 // // ESERCIZIO 4
 // function checkAccess() {
