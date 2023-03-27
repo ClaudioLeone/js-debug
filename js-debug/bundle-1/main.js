@@ -45,18 +45,32 @@ checkAge();
        La soluzione si ottiene creando la nostra variabile con 'let'.
     
     3. SI, è presente un errore logico: non è stato inserito un output per la funzione che, si, viene eseguita senza errori essendo stata richiamata ma essendo che la funzione serve a restituire un messaggio questo non verrà mai letto dall'utente se non forniamo alla funzione un modo per parlare con l'utente [console.log() || alert() || inserimento di tag contenente il testo del messaggio calcolato dalla funzione all'interno del documento html].
-
 */
 
 ///////////////////////////////////////////////////////////////////////////////////
 
-// // ESERCIZIO 2
+// ESERCIZIO 2
 // function printColorsNumber() {
 //     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
 //     console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
 // }
 // printColorsNumber();
 
+function printColorsNumber() {
+    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+    console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+}
+printColorsNumber();
+
+/*
+    1. Questo codice, serve a riportare una stringa in console che indichi il numero totale di elementi (di colori in questo caso) presenti nell'array di elementi dichiarato
+
+    2. SI, è presente un errore di sintassi, ovvero la posizione delle ultime due lettere della parola 'length' è stata inserita al contrario, producendo 'lenght' come metodo per il nostro array 'colors' che non può essere riconosciuto come metodo valido poiché inesistente.
+    
+    3. NO, non sono presenti errori logici.
+*/
+
+///////////////////////////////////////////////////////////////////////////////////
 
 // // ESERCIZIO 3
 // function addNumbers() {
