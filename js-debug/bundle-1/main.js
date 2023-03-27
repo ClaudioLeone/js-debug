@@ -82,13 +82,13 @@ printColorsNumber();
 // addNumbers();
 
 // ESERCIZIO 3
-function addNumbers() {
-    const userNumber = parseInt(prompt('Inserisci un numero'));
-    const total = userNumber + 12;
+// function addNumbers() {
+//     const userNumber = parseInt(prompt('Inserisci un numero'));
+//     const total = userNumber + 12;
 
-    console.log(`Il risultato finale è ${total}`);
-}
-addNumbers();
+//     console.log(`Il risultato finale è ${total}`);
+// }
+// addNumbers();
 
 /*
     1. Questo codice serve a sommare il numero inserito dall'utente via input con un numero che abbiamo scelto noi come addendo e riportarne il risultato in console.
@@ -123,3 +123,37 @@ addNumbers();
 //     }
 // }
 // checkAccess();
+
+// ESERCIZIO 4
+function checkAccess() {
+    const addresses = [
+        'mymail@mail.com',
+        'yourmail@mail.com',
+        'hermail@mail.com',
+        'hismail@mail.com',
+    ];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
+
+    let grantAccess = 'false';
+
+    if (addresses.includes(userEmail)) {
+        grantAccess = 'true';
+    }
+
+    if (grantAccess === "true") {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
+
+/*
+    1. Questo codice serve a permettere o negare l'accesso di un utente al sito in cui vuole accedere in base alla corretta o errata scrittura del proprio indirizzo e-mail, quindi anche a non permettere l'accesso ad utenti non registrati.
+
+    2. SI, è presente un errore di sintassi: non è stata messa tra le virgolette ("") la parola 'true' all'interno della condizione di 'if', quindi anche se la mail viene inserita correttamente la condizione non viene calcolata ed il risultato sarà sempre "Accesso negato!".
+
+    3. NO, non sono presenti errori logici.
+*/
+
+///////////////////////////////////////////////////////////////////////////////////
